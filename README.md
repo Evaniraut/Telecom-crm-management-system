@@ -165,4 +165,3 @@ Configured server paths, directory permissions, and database connections to supp
 * Automate estimate and document generation
 * Provide controlled access to sensitive information
 * Maintain an auditable history of system activity
-
