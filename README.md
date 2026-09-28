@@ -1,12 +1,12 @@
 # Telecom CRM & Management System
 
-A web-based **enterprise CRM and document management system** built to digitize SIP customer records, streamline application workflows, automate administrative document generation, and manage customer information through a centralized platform.
+A web-based enterprise CRM and document management system built to digitize SIP customer records, streamline application workflows, automate document generation, and manage customer information through a centralized platform.
 
 ## Overview
 
 The system replaces manual, paper-based workflows with a searchable digital platform for managing customer applications, SIP details, scanned documents, estimates, administrative letters, and user activities.
 
-It is designed for professional and operational use, with a focus on structured information management, role-based access, usability, and workflow efficiency.
+It focuses on structured information management, role-based access, usability, and workflow efficiency.
 
 ## Features
 
@@ -31,14 +31,14 @@ It is designed for professional and operational use, with a focus on structured 
 * Automatic calculation of Monthly Recurring Charges (MRC)
 * VAT calculation
 * Generation of cost estimates
-* Generation of formal administrative letters
+* Generation of administrative letters
 * Printable and downloadable PDF/HTML documents
 
 ### Role-Based Access Control
 
-* Separate Admin and User roles
+* Admin and User roles
 * Granular permission system
-* Restricted access to administrative functionality
+* Restricted administrative functionality
 * Secure authentication and password handling
 
 Example permissions:
@@ -55,12 +55,12 @@ manage_users
 
 * Tracks user operations within the application
 * Records actions with timestamps
-* Logs activities such as viewing, editing, and updating records
+* Logs viewing, editing, and updating activities
 * Provides administrative visibility into system usage
 
 ## UI / UX
 
-The application follows an **enterprise-style UI** designed for professional workflows.
+The application uses an enterprise-style interface designed for professional and operational workflows.
 
 The interface focuses on:
 
@@ -72,27 +72,23 @@ The interface focuses on:
 * Consistent presentation
 * Easy access to complex information
 
-The design prioritizes usability and operational efficiency rather than unnecessary visual decoration.
-
 ## Technology Stack
 
-| Technology           | Purpose                       |
-| -------------------- | ----------------------------- |
-| PHP 8.x              | Backend and application logic |
-| MySQL / MariaDB      | Relational database           |
-| HTML5                | Frontend structure            |
-| CSS3                 | Styling and layout            |
-| JavaScript           | Client-side functionality     |
-| Apache               | Web server                    |
-| XAMPP / WAMP         | Development environment       |
-| PHPMailer            | Email functionality           |
-| Web-to-PDF Print API | PDF generation                |
+* PHP 8.x
+* MySQL / MariaDB
+* HTML5
+* CSS3
+* JavaScript
+* Apache
+* XAMPP / WAMP
+* PHPMailer
+* Web-to-PDF Print API
 
-## Database Architecture
+## Database
 
-The system uses a relational MySQL/MariaDB database containing interconnected tables for users, customer applications, SIP records, documents, and activity logs.
+The system uses a relational MySQL/MariaDB database with interconnected tables for users, applications, customer information, documents, and activity logs.
 
-### Core Tables
+Main tables:
 
 ```text
 users
@@ -106,30 +102,21 @@ user_activities
 activity_logs
 ```
 
-### Data Management
-
-* Primary and foreign key relationships
-* Structured relational data
-* `utf8mb4` character encoding
-* JOIN-based data retrieval
-* Search and filtering functionality
-* Separation of user, customer, document, and activity data
-
 ## System Architecture
 
 ```text
 Users / Workstations
-        │
-        ▼
+        |
+        v
    Web Browser
-        │
-        ▼
+        |
+        v
  Apache Web Server
-        │
-        ▼
+        |
+        v
   PHP Application
-        │
-        ▼
+        |
+        v
  MySQL / MariaDB
 ```
 
@@ -148,8 +135,6 @@ The deployment involves:
 
 ## Security
 
-The system incorporates several security and access-control mechanisms:
-
 * Role-based access control
 * Granular permissions
 * Password hashing
@@ -157,7 +142,7 @@ The system incorporates several security and access-control mechanisms:
 * User activity logging
 * Controlled access to customer documents
 
-## Challenges Addressed
+## Challenges
 
 ### Interconnected Application Logic
 
@@ -183,6 +168,7 @@ Configured server paths, directory permissions, and database connections to supp
 
 ## Project Status
 
-**Completed**
+Completed
 
 > This repository is intended for demonstration and portfolio purposes. Confidential information and real customer data have been excluded.
+
